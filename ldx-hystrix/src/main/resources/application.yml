@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: ldx-hystrix
+
+server:
+  port: 9999
+
+
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "localhost"

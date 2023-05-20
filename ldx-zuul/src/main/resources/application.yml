@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: ldx-zuul
+
+server:
+  port: 8080
+
+#配置一个路由器
+zuul:
+  routes:
+    order-api:
+      path: /oapi/**
+      serviceId: ldx-order-api
+
+#从eureka获取我们的服务器的真实ip地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7000/eureka
+
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ldx-wfw" />
+        <module name="ldx-hystrix" />
+        <module name="order" />
+        <module name="goods-api" />
+        <module name="eureka" />
+        <module name="order-api" />
+        <module name="goods" />
+        <module name="commons" />
+        <module name="ldx-zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="commons" target="1.8" />
+      <module name="dependency" target="1.8" />
+      <module name="eureka" target="1.8" />
+      <module name="goods" target="1.8" />
+      <module name="goods-api" target="1.8" />
+      <module name="ldx-hystrix" target="1.8" />
+      <module name="ldx-wfw" target="1.8" />
+      <module name="ldx-zuul" target="1.8" />
+      <module name="order" target="1.8" />
+      <module name="order-api" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
